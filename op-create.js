@@ -12,4 +12,3 @@ function observer(message) {
 }
 
 stream.subscribe(observer);
-

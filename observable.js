@@ -5,7 +5,6 @@ const obs = new Observable((subject) => {
   //Push messages to the observer
   subject.next(1);
   subject.next(2);
-  subject.next("Jurgis");
   subject.complete();
 });
 //Define an observer
@@ -19,4 +18,3 @@ obs.subscribe({
   error: (err) => console.error(err),
   complete: () => console.log("Observable completed"),
 });
-

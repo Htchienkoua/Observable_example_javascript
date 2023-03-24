@@ -1,4 +1,4 @@
-import { subject } from './subj.js';
+import { subject } from "./subj.js";
 
 function observerOne(message) {
   console.log(`Observer1: ${message}`);
@@ -14,4 +14,3 @@ console.log("Not");
 subject.subscribe(observerTwo);
 
 subject.next("Sparta");
-
